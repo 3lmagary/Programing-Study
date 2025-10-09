@@ -22,3 +22,13 @@ import string
 # =====================================
 
 
+def find_missing_letter_in(GivenLetters):
+    alpha = string.ascii_letters
+    start = alpha.index(GivenLetters[0])
+    for letter in alpha[start:]:
+        if letter not in  GivenLetters:
+            return letter
+        
+    return f"No Missing Letter In Sequence "
+
+print(find_missing_letter_in('abcdeghi'))
