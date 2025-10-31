@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="main.js"></script>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="CRUD.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CRUD</title>
 </head>
 <body>
-    <h1>Hi, My Name Is Mohamed Tamer Fared Ali</h1>
+    <div class="crud">
+        <div class="head">
+            <h2>CRUD</h2>
+            <p>PRODUCT MANAGEMENT SYSTEM</p>
+        </div>
+
+        <div class="inputs">
+            <input placeholder="title" type="text" id="title" class="input">
+            <div class="price">
+                <input type="number" placeholder="price" id="price" class="input">
+                <input type="number" placeholder="taxes" id="taxes" class="input">
+                <input type="number" placeholder="ads" id="ads" class="input">
+                <input type="number" placeholder="discount" id="discount" class="input">
+                <small id="total">0</small>
+            </div>
+            <input type="number" placeholder="count" id="count" class="input">
+            <input type="text" placeholder="category" id="category" class="input">
+            <button id="submit">Create</button>
+        </div>
+
+        <div class="searchBlock">
+            <input type="text" placeholder="Search" id="search">
+            <div class="btnSearch">
+                <button id="searchTitle">Search By Title</button>
+                <button id="searchCategory">Search By Category</button>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- المنتجات ستظهر هنا -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="CRUD.js"></script>
 </body>
 </html>

@@ -148,3 +148,8 @@
 
 // console.log(main('Ahmed'))
 // ---------------------------------------
+
+// let second = document.getElementById('2');
+// console.log(second.previousSibling)
+// console.log(second.nextElementSibling.outerHTML)
+
